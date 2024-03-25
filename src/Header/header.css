@@ -1,0 +1,14 @@
+.Header{
+    width: 100%;
+    text-align: center;
+
+
+    padding-block: 5px;
+
+    background-color: rgba(49, 48, 77, 0.3);
+    border-bottom: 1px solid var(--foreground);
+    color: var(--whited);
+}
+.Header h1{
+    margin: 0 auto;
+}

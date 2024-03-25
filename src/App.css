@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+.All{
+    width: 100%;
+}
+main{
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    height: 100%;
+    width: 100%;
+
+    max-width: 850px;
+    max-height: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searcher{
+    
+    position: relative;
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searcher h1, h2{
+    margin: 0;
+    color: var(--whited);
+}
+.searcher h1{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.searcher h2{
+    font-size: 20px;
+    color: var(--darker-blue);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading{
+    top: 0;
+    margin: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.ui-inut-ultimate{
+
+    gap: .5em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.ui-inut-ultimate button{
+    border: 2px solid var(--darker-blue);
+    outline: none;
+    width: 50px;
+    height: 50px;
+
+    background-color: transparent;
+    border-radius: 50px;
+
+    color: var(--whited);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type='text']{
+    border: 2px solid var(--darker-blue);    
+    outline: none;
+
+    border-radius: 50px;
+    width: 500px;
+    font-size: 20px;
+    padding: 10px;
+
+    background-color: transparent;
+    color: var(--whited);
 }
+
+input[type='text']:hover, .ui-inut-ultimate button:hover{
+    background-color: var(--darker-blue);
+    color: --whited;
+}
+
+.buttons-searcher{
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+}
+
+.buttons-searcher button{
+    font-size: 20px;
+    border: 1.5px solid transparent;
+    outline: none;
+    background-color: var(--);
+
+    border-radius: 20px;
+    padding: 10px;
+
+    background-color: var(--darker-blue);
+
+    transition: 150ms linear;
+
+}
+
+
+.buttons-searcher button:hover{
+    background-color: transparent;
+    border: 1.5px solid var(--darker-blue);
+    color: var(--whited);
+}
+
